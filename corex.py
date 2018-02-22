@@ -159,7 +159,7 @@ class Corex(object):
         """
         x = np.asarray(x)
         n_visible = x.shape[0]
-        assert self.n_visible == n_visible, \
+        assert self.n_visible == n_visible,
             "Incorrect dimensionality for samples to transform."
         return np.ravel(x[:, np.newaxis] == np.tile(np.arange(self.dim_visible), (n_visible, 1)))
 
